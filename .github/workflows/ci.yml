@@ -14,8 +14,8 @@ jobs:
       - run: pip install flake8 pytest django djangorestframework
       - run: flake8 .
       - run: |
-			    if [ -d tests ]; then
-			      pytest --maxfail=1 --disable-warnings -q
-			    else
-			      echo "No tests found"
-			    fi
+          if [ -d tests ]; then
+            pytest --maxfail=1 --disable-warnings -q
+          else
+            echo "No tests found"
+          fi
