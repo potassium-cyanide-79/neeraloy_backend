@@ -1,0 +1,3 @@
+- `main` = always production-ready
+- `develop` = integration branch
+- Feature branches named `feature/xyz`
