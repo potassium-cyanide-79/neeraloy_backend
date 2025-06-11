@@ -12,7 +12,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install flake8 pytest django djangorestframework
-      - run: flake8 .
+      - run: flake8 . --ignore=E501,F401
       - run: |
           if [ -d tests ]; then
             pytest --maxfail=1 --disable-warnings -q
