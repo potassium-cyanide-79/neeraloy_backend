@@ -1,3 +1,2 @@
 <h1>NeerAloy's Backend</h1>
 [![Backend CI](https://github.com/potassium-cyanide-79/neeraloy_backend/actions/workflows/ci.yml/badge.svg?branch=develop)](https://github.com/potassium-cyanide-79/neeraloy_backend/actions/workflows/ci.yml)
-[![Backend CI](https://github.com/potassium-cyanide-79/neeraloy_backend/actions/workflows/ci.yml/badge.svg?branch=develop)](https://github.com/potassium-cyanide-79/neeraloy_backend/actions/workflows/ci.yml)
