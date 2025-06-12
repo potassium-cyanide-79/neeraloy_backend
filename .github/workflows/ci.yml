@@ -15,5 +15,5 @@ jobs:
       - run: flake8 . --ignore=E501,F401
       - run: |
           export DJANGO_SETTINGS_MODULE=neeraloy_backend.settings
+          export PYTHONPATH=.
           pytest --maxfail=1 --disable-warnings -q
-          
