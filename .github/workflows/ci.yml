@@ -11,7 +11,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-      - run: pip install flake8 pytest django djangorestframework
+      - run: pip install flake8 pytest django djangorestframework django-environ
       - run: flake8 . --ignore=E501,F401
       - run: |
           export DJANGO_SETTINGS_MODULE=neeraloy_backend.settings
