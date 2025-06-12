@@ -1,5 +1,6 @@
 from rest_framework.test import APIClient
 
+
 def test_root_returns_200():
     client = APIClient()
     response = client.get("/")
