@@ -17,6 +17,8 @@ jobs:
         env:
           DJANGO_SETTINGS_MODULE: neeraloy_backend.settings
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DEBUG: ${{ secrets.DEBUG }}
         run: |
           export PYTHONPATH=.
           pytest --maxfail=1 --disable-warnings -q
