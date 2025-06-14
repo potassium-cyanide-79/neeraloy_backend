@@ -52,8 +52,8 @@ python pytest
 
 neeraloy_backend/ <br>
 │                 <br> 
-├── api/       # Django app for API<br>     
-├── tests/     # Test files<br>      
+├── api/  <br>     
+├── tests/ <br>      
 ├── manage.py     <br>
 ├── requirements.txt <br>
 └── README.md        <br>
