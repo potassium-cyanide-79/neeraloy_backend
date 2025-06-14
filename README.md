@@ -50,10 +50,10 @@ python manage.py migrate
 python pytest
 ```
 
-neeraloy_backend/
-│
-├── api/                # Django app for API
-├── tests/              # Test files
-├── manage.py
-├── requirements.txt
-└── README.md
+neeraloy_backend/ <br>
+│                 <br> 
+├── api/          <br>      # Django app for API
+├── tests/        <br>      # Test files
+├── manage.py     <br>
+├── requirements.txt <br>
+└── README.md        <br>
