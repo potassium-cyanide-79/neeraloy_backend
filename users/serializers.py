@@ -8,6 +8,16 @@ class TenantSignupSerializer(serializers.ModelSerializer):
         fields = ['email', 'username', 'password']
         extra_kwargs = {'password': {'write_only': True}}
 
+    def validate_email(self, value):
+        if CustomUser.objects.filter(email=value).exists():
+            raise serializers.ValidationError("Email already exists.")
+        return value
+
+    def validate_password(self, value):
+        if len(value) < 6:
+            raise serializers.ValidationError("Password must be at least 6 characters long.")
+        return value
+
     def create(self, validated_data):
         user = CustomUser.objects.create_user(
             email=validated_data['email'],
@@ -17,6 +27,7 @@ class TenantSignupSerializer(serializers.ModelSerializer):
         user.is_tenant = True
         user.save()
         return user
+
   
 
 class LandlordSignupSerializer(serializers.ModelSerializer):
@@ -24,6 +35,16 @@ class LandlordSignupSerializer(serializers.ModelSerializer):
         model = CustomUser
         fields = ['email', 'username', 'password']
         extra_kwargs = {'password': {'write_only': True}}
+
+    def validate_email(self, value):
+        if CustomUser.objects.filter(email=value).exists():
+            raise serializers.ValidationError("Email already exists.")
+        return value
+
+    def validate_password(self, value):
+        if len(value) < 6:
+            raise serializers.ValidationError("Password must be at least 6 characters long.")
+        return value
 
     def create(self, validated_data):
         user = CustomUser.objects.create_user(
