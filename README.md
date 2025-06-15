@@ -1,8 +1,8 @@
 [![Backend CI](https://github.com/potassium-cyanide-79/neeraloy_backend/actions/workflows/ci.yml/badge.svg)](https://github.com/potassium-cyanide-79/neeraloy_backend/actions/workflows/ci.yml)
 
-# Neeraloy Frontend
+# Neeraloy Backend
 
-This is the React-based frontend for the Neeraloy home rental and roommate matching platform.
+This is the Django Based Frontend for the Neeraloy home rental and roommate matching platform.
 
 ---
 
@@ -11,8 +11,8 @@ This is the React-based frontend for the Neeraloy home rental and roommate match
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/neeraloy_backend.git
-cd neeraloy_frontend
+git clone https://github.com/potassium-cyanide-79/neeraloy_backend.git
+cd neeraloy_backend
 ```
 
 ### 2. Install dependencies
