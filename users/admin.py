@@ -23,5 +23,5 @@ class CustomUserAdmin(BaseUserAdmin):
 
     search_fields = ('email',)
 
-admin.site.register(CustomUser, CustomUserAdmin)
 
+admin.site.register(CustomUser, CustomUserAdmin)
