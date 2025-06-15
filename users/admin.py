@@ -5,7 +5,7 @@ from .models import CustomUser
 
 class CustomUserAdmin(BaseUserAdmin):
     model = CustomUser
-    list_display = ('email', 'is_staff', 'is_landlord', 'is_tenant')
+    list_display = ('email', 'is_superuser', 'is_staff', 'is_landlord', 'is_tenant')
     list_filter = ('is_staff', 'is_landlord', 'is_tenant')
     ordering = ('email',)
 
