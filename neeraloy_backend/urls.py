@@ -23,9 +23,9 @@ from rest_framework_simplejwt.views import (
 from django.http import JsonResponse
 
 
-
 def root_view(request):
     return JsonResponse({"message": "API Root"})
+
 
 urlpatterns = [
     path('', root_view),

@@ -1,9 +1,11 @@
 import pytest
 from rest_framework.test import APIClient
 
+
 @pytest.fixture
 def client():
     return APIClient()
+
 
 @pytest.fixture
 def create_tenant(client):
@@ -13,6 +15,7 @@ def create_tenant(client):
     })
     return response
 
+
 @pytest.fixture
 def create_landlord(client):
     response = client.post("/api/signup/landlord/", {
@@ -21,9 +24,11 @@ def create_landlord(client):
     })
     return response
 
+
 @pytest.mark.django_db
 def test_tenant_signup(create_tenant):
     assert create_tenant.status_code == 201
+
 
 @pytest.mark.django_db
 def test_landlord_signup(create_landlord):
@@ -42,4 +47,3 @@ def test_landlord_signup(create_landlord):
 #         "password": "secure123"
 #     })
 #     assert response.status_code == 200
-

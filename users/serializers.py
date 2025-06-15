@@ -28,7 +28,6 @@ class TenantSignupSerializer(serializers.ModelSerializer):
         user.save()
         return user
 
-  
 
 class LandlordSignupSerializer(serializers.ModelSerializer):
     class Meta:
