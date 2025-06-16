@@ -34,6 +34,7 @@ def test_tenant_signup(create_tenant):
 def test_landlord_signup(create_landlord):
     assert create_landlord.status_code == 201
 
+
 @pytest.mark.django_db
 def test_tenant_login_after_signup(client, create_tenant):
     response = client.post("/api/login/", {
@@ -41,6 +42,7 @@ def test_tenant_login_after_signup(client, create_tenant):
         "password": "secure123"
     })
     assert response.status_code == 200
+
 
 @pytest.mark.django_db
 def test_landlord_login_after_signup(client, create_landlord):
